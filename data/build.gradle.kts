@@ -50,5 +50,8 @@ dependencies {
     //dagger-hilt
     implementation("com.google.dagger:hilt-android:2.56.2")
     kapt("com.google.dagger:hilt-android-compiler:2.56.2")
+    testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
+    testImplementation("io.mockk:mockk:1.14.5")
 
 }
