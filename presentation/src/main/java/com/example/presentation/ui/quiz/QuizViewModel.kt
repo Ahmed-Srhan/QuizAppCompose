@@ -47,6 +47,7 @@ class QuizViewModel @Inject constructor(
     }
 
     init {
+        print("QuizViewModel init called${quizArgs.number} ${quizArgs.category} ${quizArgs.difficulty} ${quizArgs.type}")
         val difficulty = quizArgs.difficulty.lowercase()
         val type = if (quizArgs.type == "Multiple Choice") "multiple" else "boolean"
         onEvent(
